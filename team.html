@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>포트폴리오</title>
+    <title>팀 소개</title>
     <style>
         * {
             margin: 0;
@@ -13,7 +13,7 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             color: #333;
-            background: #fafafa;
+                   background: #fafafa;
             line-height: 1.6;
         }
         header {
@@ -65,32 +65,6 @@
             margin-bottom: 1rem;
             color: #333;
         }
-        .profile-container {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            margin-bottom: 1rem;
-            flex-wrap: wrap;
-        }
-        .profile-img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            border: 2px solid #e0e0e0;
-            object-fit: cover;
-        }
-        .profile-card {
-            flex: 1;
-            background: #fff;
-            padding: 1rem;
-            border: 1px solid #e0e0e0;
-            border-radius: 5px;
-            min-width: 200px;
-        }
-        .profile-card p {
-            font-size: 0.9rem;
-            color: #666;
-        }
         .grid {
             display: grid;
             grid-template-columns: 1fr;
@@ -101,6 +75,16 @@
             padding: 1rem;
             border: 1px solid #e0e0e0;
             border-radius: 5px;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 2px solid #e0e0e0;
+            object-fit: cover;
         }
         .card h3 {
             font-size: 1.2rem;
@@ -143,10 +127,6 @@
             section h2 {
                 font-size: 1.8rem;
             }
-            .profile-img {
-                width: 120px;
-                height: 120px;
-            }
         }
         @media (max-width: 599px) {
             header {
@@ -186,12 +166,9 @@
             section h2 {
                 font-size: 1.3rem;
             }
-            .profile-img {
-                width: 80px;
-                height: 80px;
-            }
-            .profile-card p {
-                font-size: 0.8rem;
+            .card img {
+                width: 60px;
+                height: 60px;
             }
             .card h3 {
                 font-size: 1rem;
@@ -207,8 +184,8 @@
 </head>
 <body>
     <header>
-        <h1>Portfolio</h1>
-        <p>정윤서</p>
+        <h1>팀 소개</h1>
+        <p>정윤서의 팀</p>
     </header>
 
     <nav>
@@ -224,58 +201,37 @@
     </nav>
 
     <main>
-        <section id="about">
-            <h2>소개</h2>
-            <div class="profile-container">
-                <img src="./images/정윤서.jpg" alt="정윤서 프로필 사진" class="profile-img">
-                <div class="profile-card">
-                    <p>학번: 92410902</p>
-                    <p>생년월일: 2005. 03. 26</p>
-                    <p>전공: 정보보호학전공</p>
-                    <p>학년: 2학년</p>
-                    <p>전화번호: 010-2638-8941</p>
-                    <p>e-mail: oesp91@kakao.com</p>
-                </div>
-            </div>
-            <p>저는 웹 보안을 공부하는 학생입니다. CSRF, SQL 인젝션, XSS 등 레거시한 웹 취약점들을 공부했고, 최근에는 모던 웹에서 발생하는 취약점을 연구하며 보안 전문가를 목표로 노력하고 있습니다. 모의해킹과 레드팀 활동에 관심이 많습니다!</p>
-        </section>
-
-        <section id="projects">
-            <h2>프로젝트</h2>
+        <section id="team">
+            <h2>My Team</h2>
+            <p>아래는 주요 팀원들의 소개입니다.</p>
             <div class="grid">
                 <div class="card">
-                    <h3>WPHunter</h3>
-                    <p>Semgrep을 엔진으로 사용해 웹 인터페이스로 접근할 수 있는 워드프레스 플러그인의 취약점 탐지 자동화 도구 개발</p>
+                    <img src="./images/심재훈.jpeg" alt="팀원 1 프로필 사진">
+                    <div>
+                        <h3>심재훈</h3>
+                        <p>RubiyaLab 리더, 웹 취약점 분석 전문. 2024 JBU CTF에서 팀을 이끌어 우수상을 수상.</p>
+                    </div>
                 </div>
                 <div class="card">
-                    <h3>CTF 문제 제작</h3>
-                    <p>RubiyaLab 팀과 함께 웹 취약점 기반 CTF 문제를 설계하고 테스트했습니다.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="activities">
-            <h2>활동 내역</h2>
-            <div class="grid">
-                <h3>2025</h3>
-                <div></div>
-                <div class="card">
-                    <h3>RubiyaLab</h3>
-                    <p>CTF팀 RubiyaLab에서 활동 중, 웹 취약점 연구 및 문제 풀이</p>
+                    <img src="./images/우성민.jpg" alt="팀원 2 프로필 사진">
+                    <div>
+                        <h3>우성민</h3>
+                        <p>SCP 동아리 부회장, 리눅스 및 네트워크 보안 전문. 신입 멘토링 프로그램 운영.</p>
+                    </div>
                 </div>
                 <div class="card">
-                    <h3>SCP 학습부장</h3>
-                    <p>신입부원 리눅스 멘토링, 동아리 학습 방침 및 운영</p>
-                </div>
-                <h3>2024</h3>
-                <div></div>
-                <div class="card">
-                    <h3>JBU CTF</h3>
-                    <p>2024 JBU CTF에서 "김정천"팀으로 우수상 수상</p>
+                    <img src="./images/정윤서2.jpeg" alt="팀원 3 프로필 사진">
+                    <div>
+                        <h3>정윤서</h3>
+                        <p>RubiyaLab 멤버, 모의해킹과 XSS 취약점 연구. CTF 문제 제작에 기여.</p>
+                    </div>
                 </div>
                 <div class="card">
-                    <h3>SCP 내부 세미나</h3>
-                    <p>웹 취약점, 보안 트렌드 등의 내용으로 내부 세미나 발표 진행</p>
+                    <img src="./images/정재성.jpeg" alt="팀원 3 프로필 사진">
+                    <div>
+                        <h3>정재성</h3>
+                        <p>RubiyaLab 멤버, 모의해킹과 XSS 취약점 연구. CTF 문제 제작에 기여.</p>
+                    </div>
                 </div>
             </div>
         </section>

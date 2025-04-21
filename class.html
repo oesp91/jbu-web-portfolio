@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>포트폴리오</title>
+    <title>수업 활동 - 정윤서</title>
     <style>
         * {
             margin: 0;
@@ -65,32 +65,6 @@
             margin-bottom: 1rem;
             color: #333;
         }
-        .profile-container {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            margin-bottom: 1rem;
-            flex-wrap: wrap;
-        }
-        .profile-img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            border: 2px solid #e0e0e0;
-            object-fit: cover;
-        }
-        .profile-card {
-            flex: 1;
-            background: #fff;
-            padding: 1rem;
-            border: 1px solid #e0e0e0;
-            border-radius: 5px;
-            min-width: 200px;
-        }
-        .profile-card p {
-            font-size: 0.9rem;
-            color: #666;
-        }
         .grid {
             display: grid;
             grid-template-columns: 1fr;
@@ -110,6 +84,19 @@
         .card p {
             font-size: 0.9rem;
             color: #666;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        th, td {
+            border: 1px solid #e0e0e0;
+            padding: 0.8rem;
+            text-align: left;
+        }
+        th {
+            background: #f5f5f5;
         }
         footer {
             text-align: center;
@@ -142,10 +129,6 @@
             }
             section h2 {
                 font-size: 1.8rem;
-            }
-            .profile-img {
-                width: 120px;
-                height: 120px;
             }
         }
         @media (max-width: 599px) {
@@ -186,18 +169,15 @@
             section h2 {
                 font-size: 1.3rem;
             }
-            .profile-img {
-                width: 80px;
-                height: 80px;
-            }
-            .profile-card p {
-                font-size: 0.8rem;
-            }
             .card h3 {
                 font-size: 1rem;
             }
             .card p {
                 font-size: 0.8rem;
+            }
+            th, td {
+                font-size: 0.8rem;
+                padding: 0.5rem;
             }
             footer {
                 font-size: 0.8rem;
@@ -207,8 +187,8 @@
 </head>
 <body>
     <header>
-        <h1>Portfolio</h1>
-        <p>정윤서</p>
+        <h1>수업 활동</h1>
+        <p>2학년 1학기 수업 활동</p>
     </header>
 
     <nav>
@@ -224,60 +204,72 @@
     </nav>
 
     <main>
-        <section id="about">
-            <h2>소개</h2>
-            <div class="profile-container">
-                <img src="./images/정윤서.jpg" alt="정윤서 프로필 사진" class="profile-img">
-                <div class="profile-card">
-                    <p>학번: 92410902</p>
-                    <p>생년월일: 2005. 03. 26</p>
-                    <p>전공: 정보보호학전공</p>
-                    <p>학년: 2학년</p>
-                    <p>전화번호: 010-2638-8941</p>
-                    <p>e-mail: oesp91@kakao.com</p>
-                </div>
-            </div>
-            <p>저는 웹 보안을 공부하는 학생입니다. CSRF, SQL 인젝션, XSS 등 레거시한 웹 취약점들을 공부했고, 최근에는 모던 웹에서 발생하는 취약점을 연구하며 보안 전문가를 목표로 노력하고 있습니다. 모의해킹과 레드팀 활동에 관심이 많습니다!</p>
-        </section>
+        <section id="class-activities">
+            <h2>수업 활동</h2>
+            <p>정보보호학전공 2학년으로서 다양한 수업과 과제를 통해 웹 보안 및 사이버 보안 기술을 학습하고 있습니다. 아래는 주요 수업 활동과 프로젝트입니다.</p>
 
-        <section id="projects">
-            <h2>프로젝트</h2>
+            <h3>주요 수업 목록</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>수업명</th>
+                        <th>학기</th>
+                        <th>주요 내용</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>웹프로그래밍</td>
+                        <td>2025 상반기</td>
+                        <td>HTML, CSS, JS 등을 활용한 웹 페이지 제작</td>
+                    </tr>
+                    <tr>
+                        <td>컴퓨터네트워크</td>
+                        <td>2025 상반기</td>
+                        <td>컴퓨터 네트워크 기본 동작 원리와 OSI 7계층에서의 각 계층 별 공격 기법 대응방안 학습</td>
+                    </tr>
+                    <tr>
+                        <td>객체지향프로그래밍</td>
+                        <td>2025 상반기</td>
+                        <td>자바 클래스, 상속, 인터페이스 개념을 이해하고 활용</td>
+                    </tr>
+                    <tr>
+                        <td>보안자료구조</td>
+                        <td>2025 상반기</td>
+                        <td>데이터를 구조적으로 표현하 방식과 이를 구현하는데 필요한 알고리즘에 대해 학습</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>주요 과제 및 프로젝트</h3>
             <div class="grid">
                 <div class="card">
-                    <h3>WPHunter</h3>
-                    <p>Semgrep을 엔진으로 사용해 웹 인터페이스로 접근할 수 있는 워드프레스 플러그인의 취약점 탐지 자동화 도구 개발</p>
+                    <h3>웹프로그래밍 - 개인 홈페이지 제작</h3>
+                    <p>HTML, CSS, JS를 사용해 웹 페이지를 제작하며 웹의 동작방식과 원리에 대해 이해.</p>
                 </div>
                 <div class="card">
-                    <h3>CTF 문제 제작</h3>
-                    <p>RubiyaLab 팀과 함께 웹 취약점 기반 CTF 문제를 설계하고 테스트했습니다.</p>
+                    <h3>보안자료구조 - 스택 자료구조를 활용한 핀볼 게임 구현</h3>
+                    <p>스택의 push, pop, peek 연산을 직접 구현하고 스택 자료구조에 대한 이해를 높힘.</p>
+                </div>
+                <div class="card">
+                    <h3>컴퓨터네트워크</h3>
+                    <p>가상 머신을 활용한 스니핑, 스푸핑 실습</p>
                 </div>
             </div>
-        </section>
-
-        <section id="activities">
-            <h2>활동 내역</h2>
-            <div class="grid">
-                <h3>2025</h3>
-                <div></div>
-                <div class="card">
-                    <h3>RubiyaLab</h3>
-                    <p>CTF팀 RubiyaLab에서 활동 중, 웹 취약점 연구 및 문제 풀이</p>
-                </div>
-                <div class="card">
-                    <h3>SCP 학습부장</h3>
-                    <p>신입부원 리눅스 멘토링, 동아리 학습 방침 및 운영</p>
-                </div>
-                <h3>2024</h3>
-                <div></div>
-                <div class="card">
-                    <h3>JBU CTF</h3>
-                    <p>2024 JBU CTF에서 "김정천"팀으로 우수상 수상</p>
-                </div>
-                <div class="card">
-                    <h3>SCP 내부 세미나</h3>
-                    <p>웹 취약점, 보안 트렌드 등의 내용으로 내부 세미나 발표 진행</p>
-                </div>
-            </div>
+            <br/>
+            <br/>
+            <details>
+                <summary>수업 활동의 의의</summary>
+                <p>수업에서 배운 내용들을 이해하고 주어진 과제를 수행하며 해당 지식에 대한 이해는 물론 실제 실습을 통해 실무적인 능력을 향상시킬 수 있었습니다.</p>
+            </details>
+            <br/>
+            <br/>
+            <h3>사용한 도구</h3>
+            <ul>
+                <li>VS Code: 코드 제작 및 편집</li>
+                <li>Wireshark: 네트워크 패킷 분석</li>
+                <li>TCPDump: 스니핑 실습</li>
+            </ul>
         </section>
     </main>
 

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>포트폴리오</title>
+    <title>SECON - 정윤서</title>
     <style>
         * {
             margin: 0;
@@ -65,32 +65,6 @@
             margin-bottom: 1rem;
             color: #333;
         }
-        .profile-container {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            margin-bottom: 1rem;
-            flex-wrap: wrap;
-        }
-        .profile-img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            border: 2px solid #e0e0e0;
-            object-fit: cover;
-        }
-        .profile-card {
-            flex: 1;
-            background: #fff;
-            padding: 1rem;
-            border: 1px solid #e0e0e0;
-            border-radius: 5px;
-            min-width: 200px;
-        }
-        .profile-card p {
-            font-size: 0.9rem;
-            color: #666;
-        }
         .grid {
             display: grid;
             grid-template-columns: 1fr;
@@ -110,6 +84,12 @@
         .card p {
             font-size: 0.9rem;
             color: #666;
+        }
+        img.event-img {
+            width: 100%;
+            max-width: 300px;
+            margin: 1rem 0;
+            border: 1px solid #e0e0e0;
         }
         footer {
             text-align: center;
@@ -143,9 +123,152 @@
             section h2 {
                 font-size: 1.8rem;
             }
-            .profile-img {
-                width: 120px;
-                height: 120px;
+        }
+        @media (max-width: 599px) {
+            header {
+                padding: 1.5rem;
+            }
+            header h1 {
+                font-size: 1.5rem;
+            }
+            header p {
+                font-size: 0.9rem;
+            }
+            nav {
+                padding: 0.5rem;
+                text-align: left;
+            }
+            nav ul {
+                flex-direction: column;
+                alignI apologize for the incomplete response. Let's continue with the corrected and complete version of the `secon.html` file, followed by the new `class.html` file, ensuring all Navbar links are updated and the "수업 활동" page is fully fleshed out with relevant components.
+
+---
+
+<xaiArtifact artifact_id="85a42b08-3c2d-4e07-bc82-d615bab7eff4" artifact_version_id="dc025c4c-9322-43b2-9428-cfad393a9c07" title="secon.html" contentType="text/html">
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SECON - 정윤서</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            color: #333;
+            background: #fafafa;
+            line-height: 1.6;
+        }
+        header {
+            background: #fff;
+            text-align: center;
+            padding: 2rem;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            font-size: 1rem;
+            color: #666;
+        }
+        nav {
+            background: #fff;
+            padding: 1rem;
+            text-align: center;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: 500;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+        .card {
+            background: #fff;
+            padding: 1rem;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+        }
+        .card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+        .card p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        img.event-img {
+            width: 100%;
+            max-width: 300px;
+            margin: 1rem 0;
+            border: 1px solid #e0e0e0;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #fff;
+            border-top: 1px solid #e0e0e0;
+            color: #666;
+        }
+        .hamburger {
+            display: none;
+mniej niż 1.5rem;
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: #007bff;
+        }
+        nav ul {
+            transition: max-height 0.3s ease-in-out;
+        }
+        nav ul.hidden {
+            max-height: 0;
+            overflow: hidden;
+        }
+        @media (min-width: 600px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            header h1 {
+                font-size: 2.5rem;
+            }
+            section h2 {
+                font-size: 1.8rem;
             }
         }
         @media (max-width: 599px) {
@@ -186,13 +309,6 @@
             section h2 {
                 font-size: 1.3rem;
             }
-            .profile-img {
-                width: 80px;
-                height: 80px;
-            }
-            .profile-card p {
-                font-size: 0.8rem;
-            }
             .card h3 {
                 font-size: 1rem;
             }
@@ -207,8 +323,8 @@
 </head>
 <body>
     <header>
-        <h1>Portfolio</h1>
-        <p>정윤서</p>
+        <h1>SECON</h1>
+        <p>정윤서의 포트폴리오</p>
     </header>
 
     <nav>
@@ -224,60 +340,33 @@
     </nav>
 
     <main>
-        <section id="about">
-            <h2>소개</h2>
-            <div class="profile-container">
-                <img src="./images/정윤서.jpg" alt="정윤서 프로필 사진" class="profile-img">
-                <div class="profile-card">
-                    <p>학번: 92410902</p>
-                    <p>생년월일: 2005. 03. 26</p>
-                    <p>전공: 정보보호학전공</p>
-                    <p>학년: 2학년</p>
-                    <p>전화번호: 010-2638-8941</p>
-                    <p>e-mail: oesp91@kakao.com</p>
-                </div>
-            </div>
-            <p>저는 웹 보안을 공부하는 학생입니다. CSRF, SQL 인젝션, XSS 등 레거시한 웹 취약점들을 공부했고, 최근에는 모던 웹에서 발생하는 취약점을 연구하며 보안 전문가를 목표로 노력하고 있습니다. 모의해킹과 레드팀 활동에 관심이 많습니다!</p>
-        </section>
-
-        <section id="projects">
-            <h2>프로젝트</h2>
+        <section id="secon">
+            <h2>SECON이란?</h2>
+            <p>SECON은 글로벌 보안 컨퍼런스로, 최신 사이버 보안 트렌드와 기술을 공유하는 자리입니다. 매년 세계적인 보안 전문가들이 참가해 강연, 워크숍, CTF 대회를 진행합니다.</p>
+            <img src="./images/secon1.jpeg" alt="SECON 컨퍼런스 사진" class="event-img">
+            
+            <h3>나의 SECON 경험</h3>
             <div class="grid">
                 <div class="card">
-                    <h3>WPHunter</h3>
-                    <p>Semgrep을 엔진으로 사용해 웹 인터페이스로 접근할 수 있는 워드프레스 플러그인의 취약점 탐지 자동화 도구 개발</p>
+                    <h3>컨퍼런스 참가</h3>
+                    <p>2025 SECON에서 전자정부 정보보호 컨퍼런스 2025에 참여했습니다.</p>
                 </div>
                 <div class="card">
-                    <h3>CTF 문제 제작</h3>
-                    <p>RubiyaLab 팀과 함께 웹 취약점 기반 CTF 문제를 설계하고 테스트했습니다.</p>
+                    <h3>전시회 참가</h3>
+                    <p>전시회에 참가하여 여러 보안 제품들에 대한 트렌드를 알아갈 수 있었습니다.</p>
                 </div>
             </div>
-        </section>
 
-        <section id="activities">
-            <h2>활동 내역</h2>
-            <div class="grid">
-                <h3>2025</h3>
-                <div></div>
-                <div class="card">
-                    <h3>RubiyaLab</h3>
-                    <p>CTF팀 RubiyaLab에서 활동 중, 웹 취약점 연구 및 문제 풀이</p>
-                </div>
-                <div class="card">
-                    <h3>SCP 학습부장</h3>
-                    <p>신입부원 리눅스 멘토링, 동아리 학습 방침 및 운영</p>
-                </div>
-                <h3>2024</h3>
-                <div></div>
-                <div class="card">
-                    <h3>JBU CTF</h3>
-                    <p>2024 JBU CTF에서 "김정천"팀으로 우수상 수상</p>
-                </div>
-                <div class="card">
-                    <h3>SCP 내부 세미나</h3>
-                    <p>웹 취약점, 보안 트렌드 등의 내용으로 내부 세미나 발표 진행</p>
-                </div>
-            </div>
+            <details>
+                <summary>SECON의 주요 컨퍼런스</summary>
+                <ul>
+                    <li>전자정부 정보보호 컨퍼런스 2025</li>
+                    <li>제 10회 항공보안 심포지엄</li>
+                    <li>2025 대테러 컨퍼런스</li>
+                </ul>
+            </details>
+
+            <p><a href="https://www.seconexpo.com/2025/kor/main.asp">SECON 공식 웹사이트 방문</a></p>
         </section>
     </main>
 
